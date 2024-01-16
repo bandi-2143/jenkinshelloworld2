@@ -16,7 +16,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	"msg" : "hello world!!"
+	"msg" : "hello world!!!!"
 }
 ]]></ee:set-payload>
 			</ee:message>
