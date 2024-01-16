@@ -32,13 +32,7 @@
 			</plugin>
 			<plugin>
 
-<groupId>org.mule.tools.maven</groupId>
 
-<artifactId>mule-maven-plugin</artifactId>
-
-<version>${mule.maven.plugin.version}</version>
-
-<extensions>true</extensions>
 
 <configuration>
 
@@ -46,26 +40,24 @@
 
 <uri>https://anypoint.mulesoft.com/</uri>
 
-<muleVersion>${app.runtime}</muleVersion>
+<muleVersion>${mule.version}</muleVersion>
 
 <username>${username}</username>
 
 <password>${password}</password>
 
-<applicationName>${project.artifactId}</applicationName>
+<applicationName>${appname}</applicationName>
+<businessGroup>{business}</businessGroup>
+<environment>{env}</environment>
 
-<environment>Sandbox</environment>
+<workerType>${vcore}</workerType>
 
-<workerType>${workerType}</workerType>
-
-<workers>1</workers>
+<workers>{workers}</workers>
 
 <objectStoreV2>true</objectStoreV2>
 
-<region> ${region} </region>
-
 </cloudHubDeployment>
-
+<classifier>mule-application</classifier>
 </configuration>
 
 </plugin>
